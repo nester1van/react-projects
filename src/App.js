@@ -12,13 +12,13 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/project1">Project1</Link>
+            <Link to="/randompictdog">RandomPictDog</Link>
           </li>
         </ul>
         <hr/>
         <Switch>
           <Route exact path="/">Home</Route>
-          <Route path="/project1"><RandomPictDog/></Route>
+          <Route path="/randompictdog"><RandomPictDog/></Route>
         </Switch>
       </div>
     </Router>
