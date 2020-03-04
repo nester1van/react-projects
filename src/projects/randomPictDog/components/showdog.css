@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(rgb(160, 160, 160), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.showDog {
+    width: 300px;
+    border: 1px solid #bbb;
+    float: left;
+    box-shadow: 3px 3px 5px #bbb;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.showDog:hover {
+    border: 1px solid #aaa;
+    box-shadow: 3px 3px 5px #aaa;
+}
+
+.showDog img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 3px 5px #bbb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
