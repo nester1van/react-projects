@@ -1,0 +1,32 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.imageGallery {
+    width: 300px;
+    border: 1px solid #bbb;
+    box-shadow: 3px 3px 5px #bbb;
+    float: left;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 0;
+
+}
+
+.imageGallery:hover {
+    border: 1px solid #aaa;
+    box-shadow: 3px 3px 5px #aaa;
+}
+
+.dogImages {
+    display: flex;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 3px 5px #aaa;
+}

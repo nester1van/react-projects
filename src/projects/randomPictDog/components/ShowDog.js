@@ -6,13 +6,13 @@ import './showdog.css';
 
 const ShowDog = () => {
     return (
-        <div className="clearfix">
-            <div className="showDog">
-                <ButtonGetDog/>
-                <FetchingProcess/>
-                <PictDog/>
-            </div>
-        </div>
+            <div className="clearfix">
+                <div className="showDog">
+                    <ButtonGetDog/>
+                    <FetchingProcess/>
+                    <PictDog/>
+                </div>
+            </div>    
     )
 }
 

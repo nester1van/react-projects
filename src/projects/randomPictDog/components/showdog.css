@@ -1,8 +1,3 @@
-body {
-    background-image: linear-gradient(rgb(160, 160, 160), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-}
-
 .clearfix::after {
     content: "";
     clear: both;

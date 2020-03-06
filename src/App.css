@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img, video {
+    max-width: 100%;
+    height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 231, 231);
+    background-image: linear-gradient(rgb(160, 160, 160), rgb(255, 255, 255));
+    background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    height: 50px;
+    background-color: rgb(82, 82, 82);
+    margin: 5px;
+    color: #fff;
+    font-size: 24px;
+    padding: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+header::after {
+    content: "React Projects";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+    background-color: rgb(82, 82, 82);
+    padding: 10px;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    float: left;
+    box-shadow: 3px 3px 8px rgb(43, 43, 43);
+}
+
+nav .link {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(43, 43, 43);
+}
+
+nav .link:hover {
+    color: #eee;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 3px 3px 8px rgb(43, 43, 43);
+    transition: 0.3s ease;
+}
+
+nav ul {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main {
+    margin: 5px;
+    min-height: 690px;
+}
+
+main select {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+main button {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(43, 43, 43);
+}
+
+main button:hover {
+    color: #eee;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 3px 3px 8px rgb(43, 43, 43);
+    transition: 0.3s ease;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(82, 82, 82);
+    padding: 13px;
+    margin: 5px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+footer::after {
+
+    content: " \00A9 2019 Nesterov Ivan Vladimirovich";
 }
