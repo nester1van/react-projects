@@ -15,11 +15,10 @@ const NumPicts = ({ maxNumber, numPicts, setNumPicts, getDogPicts }) => {
 
     return (
         <>
-            <select onChange={handleChange}>
+            <select value={numPicts} onChange={handleChange}>
                 {number.map(num => 
                     <option 
-                        key={num} label={num} value={num} 
-                        selected={(numPicts === num) ? true : false}/>
+                        key={num} label={num} value={num} />
                 )}
             </select>
         </>

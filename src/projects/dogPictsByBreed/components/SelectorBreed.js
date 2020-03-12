@@ -18,17 +18,13 @@ const SelectorBreed = ({ allBreeds,
 
     return (
         <>
-            <select onChange={handleChange}>
+            <select value={selectedBreed.breed + ',' + selectedBreed.subbreed} onChange={handleChange}>
                 {breeds.map(objBreed => {
                     const label = objBreed.breed + ' ' + objBreed.subbreed;
                     const value = objBreed.breed + ',' + objBreed.subbreed;
-                    const fnSelected = () => 
-                        ( objBreed.breed === selectedBreed.breed 
-                        && objBreed.subbreed === selectedBreed.subbreed );
-                    
+
                     return <option 
-                            key={label} label={label} value={value}
-                            selected={fnSelected()}/> 
+                            key={label} label={label} value={value}/> 
                 })}
             </select>
         </>

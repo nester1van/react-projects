@@ -5,8 +5,8 @@ const DogImages = ({ urlPicts }) => {
     return (
         <div className="clearfix">
             {urlPicts.map(pict => {
-                return  <div className='imageGallery'>
-                            <img src={pict} alt='dog' key={pict}/>
+                return  <div className='imageGallery' key={pict}>
+                            <img src={pict} alt='dog' />
                         </div>
             })}
         </div>

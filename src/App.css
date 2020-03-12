@@ -10,6 +10,7 @@ img, video {
 }
 
 body {
+    font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(rgb(160, 160, 160), rgb(255, 255, 255));
@@ -49,7 +50,7 @@ nav li {
 }
 
 nav .link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 20px;
@@ -76,6 +77,7 @@ main {
     margin: 5px;
     min-height: 690px;
 }
+
 
 main select {
     padding: 10px 15px;

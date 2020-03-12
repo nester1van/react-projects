@@ -8,7 +8,7 @@ const GetAllBreeds = ({ children, allBreeds, getAllBreeds }) => {
 
     useEffect(() => {
         getAllBreeds();
-    }, [])
+    }, []);
 
     const processingGetAllBreads = () => {
         if (isFetching) {
