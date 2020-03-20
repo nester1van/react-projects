@@ -1,19 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import formatDate from '../../js/formatDate';
 
 const UserUpdatedAt = ({ updatedAt }) => {
     const date = new Date(updatedAt);
-    const formatDate = () => {
-        const day = date.getDate();
-        const months = ['January', 'February', 'March', 'April', 
-            'May','June', 'July', 'August', 
-            'September', 'October', 'November', 'December'];
-        const month = months[date.getMonth()];
-        const year = date.getFullYear();
-        return `${day} ${month} ${year}`
-    }
+
     return (
-        <p>updated at : {formatDate()}</p>
+        <p>updated at : {formatDate(date)}</p>
     )
 };
 

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import ReposCard from './ReposCard';
+import RepoCard from './RepoCard';
 import Pagination from '../pagination/Pagination';
+import './repos.css';
 
 const Repos = ({ repos }) => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -11,7 +12,7 @@ const Repos = ({ repos }) => {
     }, [repos]);
 
     const numRepos = repos.length;
-    const reposOnPage = 5;
+    const reposOnPage = 6;
     const numPages = Math.ceil(numRepos/reposOnPage);
 
     const handleChange = (val) => {
@@ -19,12 +20,19 @@ const Repos = ({ repos }) => {
     } 
     return (
         <>  
-            <Pagination min={1} max={numPages} value={currentPage} onChange={handleChange}/>
-            {repos.slice((currentPage - 1) * reposOnPage, 
+            <div className='pagination'>
+                <Pagination 
+                min={1} max={numPages} value={currentPage} onChange={handleChange}/>
+            </div>
+            <h2 className ='title'>Repositories</h2>
+            <div className = 'flexContainer'>
+                {repos.slice((currentPage - 1) * reposOnPage, 
                     currentPage * reposOnPage)
-                .map(repos => 
-                <ReposCard key={repos.login} repos={repos}/>
-            )}
+                    .map(repo => 
+                    <RepoCard key={repo.full_name} repo={repo}/>
+                )}
+            </div>
+        
         </>
 
     )
