@@ -1,9 +1,9 @@
 import React from 'react';
 
-const FollowerAvatar = ({ avatarUrl }) => {
+const UserAvatar = ({ avatarUrl }) => {
     return (
         <img src={avatarUrl} alt='follower'/>
     )
 };
 
-export default FollowerAvatar;
+export default UserAvatar;

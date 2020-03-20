@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import UsersCollection from '../usersCollection/UsersCollection';
 
 const mapStateToProps = (state) => ({
-    users: state.followers.data
+    users: state.followings.data
 });
 
-export default connect(mapStateToProps)(UsersCollection);
+export default connect (mapStateToProps)(UsersCollection);

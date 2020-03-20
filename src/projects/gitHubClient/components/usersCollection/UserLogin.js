@@ -1,9 +1,9 @@
 import React from 'react';
 
-const FollowerLogin = ({ login }) => {
+const UserLogin = ({ login }) => {
     return (
         <p>{login}</p>
     )
 };
 
-export default FollowerLogin;
+export default UserLogin;
