@@ -20,37 +20,37 @@ const GitHubClient = () => {
                 <nav className='setMaxWidth'>
                     <ul>
                         <li>
-                            <Link className='link' to={`${url}`}>User</Link>
+                            <Link className='link' to={process.env.PUBLIC_URL + `${url}`}>User</Link>
                         </li>
                         <li>
-                            <Link className='link' to={`${url}/followers`}>Followers</Link>
+                            <Link className='link' to={process.env.PUBLIC_URL + `${url}/followers`}>Followers</Link>
                         </li>
                         <li>
-                            <Link className='link' to={`${url}/followings`}>Followings</Link>
+                            <Link className='link' to={process.env.PUBLIC_URL + `${url}/followings`}>Followings</Link>
                         </li>
                         <li>
-                            <Link className='link' to={`${url}/repos`}>Repos</Link>
+                            <Link className='link' to={process.env.PUBLIC_URL + `${url}/repos`}>Repos</Link>
                         </li>
                         <li>
-                            <Link className='link' to={`${url}/zen`}>Zen</Link>
+                            <Link className='link' to={process.env.PUBLIC_URL + `${url}/zen`}>Zen</Link>
                         </li>
 
                     </ul>
                 </nav>
                 <Switch>
-                    <Route exact path={process.env.PUBLIC_URL + `${path}`}>
+                    <Route exact path={`${path}`}>
                         <User/>
                     </Route>
-                    <Route path={process.env.PUBLIC_URL + `${path}/followers`}>
+                    <Route path={`${path}/followers`}>
                         <Followers/>
                     </Route>
-                    <Route path={process.env.PUBLIC_URL + `${path}/followings`}>
+                    <Route path={`${path}/followings`}>
                         <Followings/>
                     </Route>
-                    <Route path={process.env.PUBLIC_URL + `${path}/repos`}>
+                    <Route path={`${path}/repos`}>
                         <Repos/>
                     </Route>
-                    <Route path={process.env.PUBLIC_URL + `${path}/zen`}>
+                    <Route path={`${path}/zen`}>
                         <Zen/>
                     </Route>
                 </Switch>
