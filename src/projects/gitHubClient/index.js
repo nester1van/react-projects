@@ -38,19 +38,19 @@ const GitHubClient = () => {
                     </ul>
                 </nav>
                 <Switch>
-                    <Route exact path={`${path}`}>
+                    <Route exact path={process.env.PUBLIC_URL + `${path}`}>
                         <User/>
                     </Route>
-                    <Route path={`${path}/followers`}>
+                    <Route path={process.env.PUBLIC_URL + `${path}/followers`}>
                         <Followers/>
                     </Route>
-                    <Route path={`${path}/followings`}>
+                    <Route path={process.env.PUBLIC_URL + `${path}/followings`}>
                         <Followings/>
                     </Route>
-                    <Route path={`${path}/repos`}>
+                    <Route path={process.env.PUBLIC_URL + `${path}/repos`}>
                         <Repos/>
                     </Route>
-                    <Route path={`${path}/zen`}>
+                    <Route path={process.env.PUBLIC_URL + `${path}/zen`}>
                         <Zen/>
                     </Route>
                 </Switch>
