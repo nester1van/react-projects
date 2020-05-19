@@ -14,25 +14,25 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link className="link" to={process.env.PUBLIC_URL + "/"}>Home</Link>
+                <Link className="link" to="/">Home</Link>
               </li>
               <li>
-                <Link className="link" to={process.env.PUBLIC_URL + "/randompictdog"}>RandomPictDog</Link>
+                <Link className="link" to="/randompictdog">RandomPictDog</Link>
               </li>
               <li>
-                <Link className="link" to={process.env.PUBLIC_URL + "/dogpictsbybreed"}>DogPictsByBreed</Link>
+                <Link className="link" to="/dogpictsbybreed">DogPictsByBreed</Link>
               </li>
               <li>
-                <Link className="link" to={process.env.PUBLIC_URL + "/githubclient"}>GitHubClient</Link> 
+                <Link className="link" to="/githubclient">GitHubClient</Link> 
               </li>
             </ul>
           </nav>
           <main>
           <Switch>
-              <Route exact path={process.env.PUBLIC_URL + "/"}>Home</Route>
-              <Route path={process.env.PUBLIC_URL + "/randompictdog"}><RandomPictDog/></Route>
-              <Route path={process.env.PUBLIC_URL + "/dogpictsbybreed"}><DogPictsByBreed/></Route>
-              <Route path={process.env.PUBLIC_URL + "/githubclient"}><GitHubClient/></Route>  
+              <Route exact path="/">Home</Route>
+              <Route path="/randompictdog"><RandomPictDog/></Route>
+              <Route path="/dogpictsbybreed"><DogPictsByBreed/></Route>
+              <Route path="/githubclient"><GitHubClient/></Route>  
           </Switch>
           </main>
         </div>
