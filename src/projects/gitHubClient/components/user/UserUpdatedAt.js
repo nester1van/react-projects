@@ -6,7 +6,7 @@ const UserUpdatedAt = ({ updatedAt }) => {
     const date = new Date(updatedAt);
 
     return (
-        <p>updated at : {formatDate(date)}</p>
+        <p><strong>updated at: </strong>{formatDate(date)}</p>
     )
 };
 

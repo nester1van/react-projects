@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const UserLogin = ({ login }) => {
     return (
         <>
-            <p>login : {login}</p>
+            <p><strong>login: </strong>{login}</p>
         </>
     )
 }

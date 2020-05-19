@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserLocation = ({ location }) => {
     return (
-        <p>location : {location ? location : ' - '}</p>
+        <p><strong>location: </strong>{location ? location : ' - '}</p>
     )
 };
 

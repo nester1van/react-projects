@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserPublicRepos = ({ publicRepos }) => {
     return (
-        <p>public repositories : {publicRepos}</p>
+        <p><strong>public repositories: </strong>{publicRepos}</p>
     )
 };
 

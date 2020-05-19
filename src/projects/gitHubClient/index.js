@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
-import Zen from './components/Zen';
+import Zen from './components/zen/Zen';
 import User from './components/user/User';
 import Followers from './components/followers/Followers';
 import Followings from './components/followings/Followings';

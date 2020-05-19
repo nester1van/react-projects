@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserFollowers = ({ followers }) => {
     return (
-        <p>followers : {followers}</p>
+        <p><strong>followers: </strong>{followers}</p>
     )
 };
 

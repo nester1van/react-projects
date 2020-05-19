@@ -14,26 +14,32 @@ import UserName from './UserName';
 import UserPublicRepos from './UserPublicRepos';
 import UserType from './UserType';
 import UserUpdatedAt from './UserUpdatedAt';
+import './user.css';
 
 const User = () => {
     return (
-        <>
-            <UserAvatar/>
-            <UserName/>
-            <UserLogin/>
-            <UserLocation/>
-            <UserEmail/>
-            <UserType/>
-            <UserBio/>
-            <UserCompany/>
-            <UserHireable/>
-            <UserBlog/>
-            <UserPublicRepos/>
-            <UserFollowers/>
-            <UserFollowing/>
-            <UserCreatedAt/>
-            <UserUpdatedAt/>
-        </>
+        <div className="flexContainer user">
+            <div className="userAvatar">
+                <UserAvatar/>
+                <UserName/>
+                <UserLogin/>
+
+            </div>
+            <div className="userInfo">
+                <UserLocation/>
+                <UserEmail/>
+                <UserType/>
+                <UserBio/>
+                <UserCompany/>
+                <UserHireable/>
+                <UserBlog/>
+                <UserPublicRepos/>
+                <UserFollowers/>
+                <UserFollowing/>
+                <UserCreatedAt/>
+                <UserUpdatedAt/>
+            </div>
+        </div>
     )
 }
 

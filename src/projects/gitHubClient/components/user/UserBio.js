@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserBio = ({ bio }) => {
     return (
-        <p>bio : {(bio) ? bio : ' - '}</p>
+        <p><strong>bio: </strong>{(bio) ? bio : ' - '}</p>
     )
 };
 

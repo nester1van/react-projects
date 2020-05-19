@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserType = ({ type }) => {
     return (
-        <p>type : {type}</p>
+        <p><strong>type: </strong>{type}</p>
     )
 };
 

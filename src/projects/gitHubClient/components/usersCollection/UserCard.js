@@ -5,7 +5,7 @@ import UserLogin from './UserLogin';
 const UserCard = ({ user }) => {
     const {avatar_url, login} = user;
     return (
-        <div>
+        <div className="userCard">
             <UserAvatar avatarUrl={avatar_url}/>
             <UserLogin login={login}/>
         </div>

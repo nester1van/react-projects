@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fetch from 'cross-fetch';
+import './zen.css';
 
 // Пример компонента, не зависящего от state store.
 
@@ -20,7 +21,7 @@ const Zen = () => {
     }
     return (
         <>
-            <p>Zen : <em>{zen}</em></p>
+            <p className="zen">Zen : <em>{zen}</em></p>
         </>
     )
 }

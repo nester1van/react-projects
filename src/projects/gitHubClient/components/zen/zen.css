@@ -1,0 +1,16 @@
+.zen {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 3px 3px 5px gray;
+    font-size: 40px;
+    text-align: center;
+    padding: 60px 10px;
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 75px;
+
+}
+
+.zen:hover {
+    box-shadow: 3px 3px 5px rgb(110, 110, 110);
+}

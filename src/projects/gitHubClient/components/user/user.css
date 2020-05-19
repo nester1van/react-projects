@@ -1,0 +1,32 @@
+.flexContainer.user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content: center;
+}
+
+.user {
+    padding-top: 75px;
+}
+
+.userAvatar {
+    flex: 0 0 20%;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 3px 3px 5px gray;
+    padding: 40px 40px 10px 40px;
+}
+
+.avatarImage {
+    width: 200px;
+    height: 200px;
+}
+
+.userAvatar:hover {
+    box-shadow: 3px 3px 5px rgb(110, 110, 110);
+}
+
+.userInfo {
+    width: 80%;
+    padding-left: 40px;
+}

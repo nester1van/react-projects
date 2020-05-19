@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserCompany = ({ company }) => {
     return (
-        <p>company : {company ? company : ' - '}</p>
+        <p><strong>company: </strong>{company ? company : ' - '}</p>
     )
 };
 

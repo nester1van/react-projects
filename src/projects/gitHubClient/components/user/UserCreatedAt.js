@@ -5,7 +5,7 @@ import formatDate from '../../js/formatDate';
 const UserCreatedAt = ({ createdAt }) => {
     const date = new Date(createdAt);
     return (
-        <p>created at : {formatDate(date)}</p>
+        <p><strong>created at: </strong>{formatDate(date)}</p>
     )
 };
 

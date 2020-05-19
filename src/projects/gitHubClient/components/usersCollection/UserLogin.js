@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserLogin = ({ login }) => {
     return (
-        <p>{login}</p>
+        <p className="userLogin">{login}</p>
     )
 };
 

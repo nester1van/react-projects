@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserName = ({ name }) => {
     return (
-        <p>name : {name}</p>
+        <p><strong>name: </strong>{name}</p>
     )
 };
 

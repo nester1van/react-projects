@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserFollowing = ({ following }) => {
     return (
-        <p>following : {following}</p>
+        <p><strong>following: </strong>{following}</p>
     )
 };
 

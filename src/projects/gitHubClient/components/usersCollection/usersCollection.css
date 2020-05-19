@@ -1,0 +1,40 @@
+.title {
+    color: rgb(61, 61, 61);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.userCard {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-shadow: 3px 3px 5px gray;
+    flex: 0 0 auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.userCard:hover {
+    box-shadow: 3px 3px 5px rgb(110, 110, 110);
+}
+
+.userLogin {
+    color: rgb(61, 61, 61);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserBlog = ({ blog }) => {
     return (
-        <p>blog : {blog ? 
+        <p><strong>blog: </strong>{blog ? 
             <a  href={blog} 
                 target='_blank' 
                 rel='noopener noreferrer'>{blog}</a>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserEmail = ({ email }) => {
     return (
-        <p>email : {email ? email : ' - '}</p>
+        <p><strong>email: </strong>{email ? email : ' - '}</p>
     )
 };
 

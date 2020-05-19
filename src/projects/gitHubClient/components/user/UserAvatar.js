@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserAvatar = ({ avatarUrl }) => {
     return (
-        <div>
+        <div className="avatarImage">
             <img src={avatarUrl} alt='user'/>
         </div>
     )

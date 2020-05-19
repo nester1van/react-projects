@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const UserHireable = ({ hireable }) => {
     return (
-        <p>hireable : {hireable ? hireable : ' - '}</p>
+        <p><strong>hireable: </strong>{hireable ? hireable : ' - '}</p>
     )
 };
 
