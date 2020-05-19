@@ -9,7 +9,6 @@ import RepoForksCount from './RepoForksCount';
 import './repos.css';
 
 const ReposCard = ({ repo }) => {
-    console.log(repo);
     const { full_name, description, created_at, 
         updated_at, language, stargazers_count, forks_count} = repo;
     return (
