@@ -11,7 +11,7 @@ img, video {
 
 body {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: #333;
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(rgb(160, 160, 160), rgb(255, 255, 255));
     background-repeat: no-repeat;
@@ -115,4 +115,19 @@ footer {
 footer::after {
 
     content: " \00A9 2019 Nesterov Ivan Vladimirovich";
+}
+
+.linkApi {
+    padding: 0 10px;
+    color: #333;
+}
+
+
+
+.linkApi:active, .linkApi:visited {
+    color: #333;
+}
+
+.linkApi:hover {
+    color: #222;
 }
