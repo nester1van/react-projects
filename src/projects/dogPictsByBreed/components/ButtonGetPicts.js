@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getDogPicts } from '../redux/dogPicts/actions';
+import Button from 'react-bootstrap/Button';
 
 const ButtonGetPicts = ({ getDogPicts }) => {
     return (
-        <button onClick={getDogPicts}>
+        <Button variant="dark" onClick={getDogPicts}>
             Fetch dog picts
-        </button>
+        </Button>
     );
 };
 

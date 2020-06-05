@@ -1,14 +1,15 @@
 import React from 'react';
+import './home.css';
 
 const Home = () => {
     return (
-        <>
+        <div className="home">
             <h1>Проекты на React</h1>
             <h2>Random dog picture</h2>
             <p>
                 Выводится случайная фотография собаки.
                 <br/>
-                Отображается статус выполнения запроса к серверу посредстом 
+                Отображается статус выполнения запроса к серверу посредстом {}
                 <a 
                     href="https://dog.ceo/dog-api/" 
                     className="linkApi"
@@ -21,7 +22,7 @@ const Home = () => {
             <p>
                 Выводится заданное количество случайных фотографий собак выбранной породы.
                 <br/>
-                Используется 
+                Используется {}
                 <a 
                     href="https://dog.ceo/dog-api/" 
                     className="linkApi"
@@ -35,7 +36,7 @@ const Home = () => {
                 Реализован интерфейс доступа к разделам GitHub:
                 User information, Followers, Followings, Repositories, Zen.
                 <br/>
-                Используeтся 
+                Используeтся {}
                 <a 
                     href="https://developer.github.com/v3/" 
                     className="linkApi"
@@ -44,7 +45,7 @@ const Home = () => {
                         GitHub REST API v3
                 </a>                
             </p>
-        </>
+        </div>
     )
 }
 

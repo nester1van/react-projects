@@ -1,23 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import Badge from 'react-bootstrap/Badge';
+import './getUser.css';
 
 const StatusGetUser = ({ isFetching, status, errorMessage }) => {
     const fetchingProcess = () => {
         if (isFetching) {
-            return <> loading...</>
+            return <Badge variant="warning"> loading...</Badge>
         } else if (status === 'success') {
-            return <> success</>
+            return <Badge variant="success"> success</Badge>
         } else if (errorMessage === 'Not Found') {
-            return <> user login isn't valid</>
+            return <Badge variant="danger" className="longBadge"> user login isn't valid</Badge>
         } else {
             return <> server error</>
         }
     }
     return (
-        <>
+        <div className="statusGetUser">
             {fetchingProcess()}
-        </>
+        </div>
     )
 };
 

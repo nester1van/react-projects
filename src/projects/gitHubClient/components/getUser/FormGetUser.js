@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+
+import StatusGetUser from './StatusGetUser';
+
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import './getUser.css';
+
 import { getUser } from '../../redux/user/actions';
 import { getFollowers } from '../../redux/followers/actions';
 import { getFollowings } from '../../redux/followings/actions';
@@ -21,16 +28,23 @@ const FormGetUser = ({ getUser, getFollowers, getFollowings, getRepos }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} style={{display: 'inline'}}>
-            <input 
-                type='text' 
-                onChange={handleChange}
-                placeholder='type user login here...'
-                value={userLogin}/>
-            <input 
-                type='submit'
-                className='submit'/>
-        </form>
+        <div className="formGetUser">
+            <Form onSubmit={handleSubmit} inline>
+                <Form.Control 
+                onChange={handleChange} 
+                value={userLogin}
+                type="text" 
+                placeholder="type user login here..."
+                />
+                <Button 
+                    variant="dark"
+                    type='submit'
+                    className='submit'>
+                    Submit
+                </Button>
+                <StatusGetUser/>     
+            </Form>
+        </div>
     )
 }
 

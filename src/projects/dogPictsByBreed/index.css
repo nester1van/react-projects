@@ -1,14 +1,17 @@
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.formGetDogs {
+    margin: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imageGallery {
     width: 300px;
     border: 1px solid #bbb;
     box-shadow: 3px 3px 5px #bbb;
-    float: left;
     padding: 5px;
     display: flex;
     justify-content: center;

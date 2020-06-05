@@ -1,8 +1,9 @@
 .flexContainer.user{
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     align-content: center;
+    margin: 0 auto;
 }
 
 .user {
@@ -11,6 +12,7 @@
 
 .userAvatar {
     flex: 0 0 20%;
+    align-self: start;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
     box-shadow: 3px 3px 5px gray;
@@ -27,6 +29,18 @@
 }
 
 .userInfo {
-    width: 80%;
+    width: 60%;
     padding-left: 40px;
+}
+
+@media screen and (max-width: 702px) {
+    .userInfo {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .user {
+        padding-top: 25px;
+    }
 }

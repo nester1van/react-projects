@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { selectBreed } from '../redux/selectedBreed/action';
 import { getDogPicts } from '../redux/dogPicts/actions';
 
+import Form from 'react-bootstrap/Form';
+
 const SelectorBreed = ({ allBreeds, 
                          selectedBreed, 
                          selectBreed, 
@@ -18,7 +20,10 @@ const SelectorBreed = ({ allBreeds,
 
     return (
         <>
-            <select value={selectedBreed.breed + ',' + selectedBreed.subbreed} onChange={handleChange}>
+            <Form.Control 
+                as="select"
+                value={selectedBreed.breed + ',' + selectedBreed.subbreed} 
+                onChange={handleChange}>
                 {breeds.map(objBreed => {
                     const label = objBreed.breed + ' ' + objBreed.subbreed;
                     const value = objBreed.breed + ',' + objBreed.subbreed;
@@ -26,8 +31,9 @@ const SelectorBreed = ({ allBreeds,
                     return <option 
                             key={label} label={label} value={value}/> 
                 })}
-            </select>
+            </Form.Control>
         </>
+       
     );
 };
 

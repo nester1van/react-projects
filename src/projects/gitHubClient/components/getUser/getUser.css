@@ -1,0 +1,15 @@
+.formGetUser {
+    margin: 10px;
+}
+
+.statusGetUser {
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+@media screen and (max-width: 340px) {
+    .statusGetUser > .longBadge {
+        margin-left: -5px;
+    }
+}

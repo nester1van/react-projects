@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import './pagination.css';
 
 const Pagination = ({ min, max, value, onChange }) => {
@@ -24,9 +25,9 @@ const Pagination = ({ min, max, value, onChange }) => {
 
     return (
         <>
-            <button onClick={handleClickLess} className={(value <= min) ? 'hidden' : ''}>{'<'}</button>
-            <button disabled className='disabled'>{value}</button>
-            <button onClick={handleClickGreater} className={(value >= max) ? 'hidden' : ''}>{'>'}</button>
+            <Button onClick={handleClickLess} variant="dark" className={(value <= min) ? 'hidden' : ''}>{'<'}</Button>
+            <Button disabled  variant="dark" className='disabled'>{value}</Button>
+            <Button onClick={handleClickGreater}  variant="dark" className={(value >= max) ? 'hidden' : ''}>{'>'}</Button>
         </>
     )
 };

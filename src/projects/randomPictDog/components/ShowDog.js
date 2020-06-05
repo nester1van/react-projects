@@ -6,10 +6,14 @@ import './showdog.css';
 
 const ShowDog = () => {
     return (
-            <div className="clearfix">
+            <div className="wrapper">
                 <div className="showDog">
-                    <ButtonGetDog/>
-                    <FetchingProcess/>
+                    <div className="buttonGetDog">
+                        <ButtonGetDog/>
+                    </div>
+                    <div className="fetchingProcess">
+                        <FetchingProcess/>
+                    </div>
                     <PictDog/>
                 </div>
             </div>    

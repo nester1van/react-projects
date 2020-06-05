@@ -35,3 +35,9 @@
     color: rgb(61, 61, 61);
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 420px) {
+    .repoCard {
+        width: 90%;
+    }
+}

@@ -1,14 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Badge from 'react-bootstrap/Badge';
 
 const FetchingProcess = ({isFetching, status}) => {
     const fetchingProcess = () => {
         if (isFetching) {
-            return <p>loading...</p>
+            return <Badge variant="warning">loading...</Badge>
         } else if (status === 'success') {
-            return <p>success</p>
+            return <Badge variant="success">success</Badge>
         } else {
-            return <p>error</p>
+            return <Badge varinat="danger">error</Badge>
         }
     }
     
